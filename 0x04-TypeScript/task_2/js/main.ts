@@ -54,3 +54,8 @@ const executeWork = (employee: Teacher | Director): string => {
     : (res = (employee as Teacher).workTeacherTasks());
   return res;
 };
+
+type Subjects = "Math" | "History";
+
+const teachClass = (todayClass: Subjects): string =>
+  todayClass === "Math" ? "Teaching Math" : "Teaching History";
